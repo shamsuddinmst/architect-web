@@ -5,11 +5,18 @@
     font-family: "Work Sans", serif;
 }
 
+/* main styles */
+/* main {
+    max-width: 1440px;
+    margin: 0 auto;
+} */
+
 /* header styles */
 
 header {
     background: #e9a75cbb;
     padding: 30px 300px;
+    margin: 0px 0px;
 }
 
 nav,
@@ -73,16 +80,170 @@ a {
 
 }
 
-/* banner responsive styles */
+/* main  section styles */
 
-@media screen and(max-width: 576px) {
+.main-content {
+    display: flex;
+    padding: 80px 350px;
+    align-items: center;
+}
+
+.container-one {
+    display: flex;
+
+
+
+}
+
+.img-container-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.container-one img {
+    width: 100%;
+}
+
+.container-two {
+    margin-left: 50px;
+
+}
+
+.year-container {
+    display: flex;
+    padding: 10px 300px;
+}
+
+.year-title {
+    border-width: 3px;
+    border-left: tomato;
+}
+
+.year-img-two {
+    margin-top: -105px;
+    margin-right: 100px;
+
+}
+
+.year-container-one {
+    margin-top: 180px;
+    margin-right: 20px;
+
+}
+
+.year-title {
+    padding-left: 5px;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: coral
+}
+
+.year-contents {
+    margin-left: 15px;
+}
+
+.year-content {
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 2px 2px lightgoldenrodyellow;
+
+}
+
+.facts-containers {
+    padding: 100px 300px;
+}
+
+.fact-icon-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-div {
+    text-align: center;
+    padding: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: coral;
+
+}
+
+.sponspors {
+    padding: 20px 300px;
+}
+
+.spons-content {
+    text-align: center;
+}
+
+.spons-discription {
+    padding: 0px 250px 0px 250px;
+}
+
+.spons-logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 100px 300px;
+    background: cornsilk;
+
+}
+
+/* mobile banner responsive styles */
+
+
+@media only screen and (max-width: 576px) {
     header {
         padding: 20px;
     }
 
-    nav,
-    ul {
+    nav {
         flex-direction: column;
     }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .container-two {
+        margin-top: 0px;
+    }
+
+    .feature-title {
+        font-size: 15px;
+    }
+
+    .feature-description {
+        font-size: 8px;
+
+    }
+
+    #btn-features {
+        font-size: 5px;
+        padding: 5px 10px;
+    }
+
+}
+
+
+/* tablet or medium devices  */
+
+@media only screen and (min-width: 576px) and(max-width: 960px) {
+
+    header {
+        padding: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
 
 }
